@@ -1,7 +1,7 @@
 name: 'spring-boot-bookstore-microservices'
 services:
   catalog-db:
-    image: postgres:18-alpine
+    image: postgres:16-alpine
     container_name: catalog-db
     environment:
       - POSTGRES_USER=postgres
