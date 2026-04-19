@@ -11,8 +11,8 @@ import org.springframework.test.context.jdbc.Sql;
 
 @DataJpaTest(
         properties = {
-                "spring.test.database.replace=none",
-                "spring.datasource.url=jdbc:tc:postgresql:16-alpine:///db",
+            "spring.test.database.replace=none",
+            "spring.datasource.url=jdbc:tc:postgresql:16-alpine:///db",
         })
 @Sql("/test-data.sql")
 // @Import(TestcontainersConfiguration.class)
@@ -30,16 +30,16 @@ class ProductRepositoryTest {
     }
 
     @Test
-    void shouldGetProductByCode(){
-         ProductEntity product = productRepository.findByCode("P140").orElseThrow();
-         assertThat(product.getCode()).isEqualTo("P140");
-         assertThat(product.getName()).isEqualTo("Ready Player One");
-         assertThat(product.getDescription()).isEqualTo("A virtual reality treasure hunt in a dystopian future.");
-         assertThat(product.getPrice()).isEqualTo(new BigDecimal("17.25"));
+    void shouldGetProductByCode() {
+        ProductEntity product = productRepository.findByCode("P140").orElseThrow();
+        assertThat(product.getCode()).isEqualTo("P140");
+        assertThat(product.getName()).isEqualTo("Ready Player One");
+        assertThat(product.getDescription()).isEqualTo("A virtual reality treasure hunt in a dystopian future.");
+        assertThat(product.getPrice()).isEqualTo(new BigDecimal("17.25"));
     }
 
     @Test
-    void shouldReturnEmptyWhenProductCodeNotExists(){
+    void shouldReturnEmptyWhenProductCodeNotExists() {
         assertThat(productRepository.findByCode("invalid_product_code")).isEmpty();
     }
 }

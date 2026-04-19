@@ -21,9 +21,11 @@ class ProductEntity {
     private Long id;
 
     @Column(nullable = false, unique = true)
-    @NotBlank(message = "Product code is required") private String code;
+    @NotBlank(message = "Product code is required")
+    private String code;
 
-    @NotBlank(message = "Product name is required") @Column(nullable = false)
+    @NotBlank(message = "Product name is required")
+    @Column(nullable = false)
     private String name;
 
     private String description;
