@@ -19,7 +19,7 @@ public class ProductService {
         this.productRepository = productRepository;
         this.properties = properties;
     }
-
+    // Used method reference to get ProductMapper to convert to Product
     public PagedResult<Product> getProducts(int pageNo) {
         Sort sort = Sort.by("name").ascending();
         pageNo = pageNo <= 1 ? 0 : pageNo - 1;
