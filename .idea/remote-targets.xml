@@ -2,7 +2,7 @@
 <project version="4">
   <component name="RemoteTargetsManager">
     <targets>
-      <target name="WSL" type="wsl" uuid="c7a635eb-7bbc-4242-93de-fe3bfaa2983a">
+      <target name="WSL" type="wsl" uuid="c85df0ef-d0e8-49dc-a5a9-40006c58cb61">
         <config>
           <option name="distributionMsId" value="Ubuntu" />
         </config>
@@ -13,8 +13,8 @@
         </ContributedStateBase>
         <ContributedStateBase type="MavenRuntime">
           <config>
-            <option name="homePath" value="C:\Program Files\JetBrains\IntelliJ IDEA 2026.1\plugins\maven\lib\maven3" />
-            <option name="versionString" value="3.9.11" />
+            <option name="homePath" value="/home/samsun/.m2/wrapper/dists/apache-maven-3.9.14-bin/1cb7fhup6b5n3bed6kckbrnspv/apache-maven-3.9.14" />
+            <option name="versionString" value="3.9.14" />
           </config>
         </ContributedStateBase>
       </target>

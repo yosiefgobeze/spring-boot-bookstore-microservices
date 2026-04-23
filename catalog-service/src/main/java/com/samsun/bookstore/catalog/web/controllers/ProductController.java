@@ -23,6 +23,15 @@ public class ProductController {
 
     @GetMapping(path = "/{code}")
     ResponseEntity<Product> getProductByCode(@PathVariable String code) {
+        //    just to demonstrate how the RestClient will Time out when the catalog-service did not respond for
+        //    above 5 seconds,
+        //    void iAmSleeping(){
+        //        try {
+        //            Thread.sleep(6000);
+        //        } catch (InterruptedException e) {
+        //            throw new RuntimeException(e);
+        //        }
+        //    }
         return productService
                 .getProductByCode(code)
                 .map(ResponseEntity::ok)
