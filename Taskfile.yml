@@ -24,6 +24,7 @@ tasks:
   build:
     cmds:
       - "{{.MVNW}} -pl catalog-service spring-boot:build-image"
+      - "{{.MVNW}} -pl order-service spring-boot:build-image"
 
   # ---------------- INFRA ----------------
   start_infra:

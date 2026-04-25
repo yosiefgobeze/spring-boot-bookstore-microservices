@@ -1,10 +1,8 @@
 package com.samsun.bookstore.orders.domain;
 
-import com.samsun.bookstore.orders.domain.models.CreateOrderRequest;
-import com.samsun.bookstore.orders.domain.models.CreateOrderResponse;
-import com.samsun.bookstore.orders.domain.models.OrderCreatedEvent;
-import com.samsun.bookstore.orders.domain.models.OrderStatus;
+import com.samsun.bookstore.orders.domain.models.*;
 import java.util.List;
+import java.util.Optional;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
@@ -33,6 +31,16 @@ public class OrderService {
         for (OrderEntity order : orders) {
             this.process(order);
         }
+    }
+
+    public List<OrderSummary> findOrders(String userName) {
+        return orderRepository.findByUserName(userName);
+    }
+
+    public Optional<OrderDTO> findUserOrder(String userName, String orderNumber) {
+        return orderRepository
+                .findByUserNameAndOrderNumber(userName, orderNumber)
+                .map(OrderMapper::convertToDTO);
     }
 
     private void process(OrderEntity order) {
