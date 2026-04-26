@@ -7,7 +7,7 @@
 		<artifactId>spring-boot-bookstore-microservices</artifactId>
 		<version>1.0-SNAPSHOT</version>
 	</parent>
-	<artifactId>order-service</artifactId>
+	<artifactId>notification-service</artifactId>
 	<url/>
 	<licenses>
 		<license/>
@@ -23,29 +23,10 @@
 	</scm>
 	<properties>
 		<java.version>21</java.version>
-		<springdoc-openapi.version>2.8.17</springdoc-openapi.version>
 		<spotless-maven-plugin.version>2.43.0</spotless-maven-plugin.version>
 		<dockerImageName>yosiefgobeze/bookstore-${project.artifactId}</dockerImageName>
-		<instancio.version>5.5.1</instancio.version>
-		<wiremock.version>3.13.1</wiremock.version>
-		<resilience4j.version>2.3.0</resilience4j.version>
 	</properties>
-
 	<dependencies>
-		<dependency>
-			<groupId>io.rest-assured</groupId>
-			<artifactId>rest-assured</artifactId>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.springdoc</groupId>
-			<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
-			<version>${springdoc-openapi.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.httpcomponents.client5</groupId>
-			<artifactId>httpclient5</artifactId>
-		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
@@ -57,6 +38,10 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-mail</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -74,37 +59,12 @@
 			<groupId>org.flywaydb</groupId>
 			<artifactId>flyway-database-postgresql</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>io.github.resilience4j</groupId>
-			<artifactId>resilience4j-spring-boot3</artifactId>
-			<version>${resilience4j.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>net.javacrumbs.shedlock</groupId>
-			<artifactId>shedlock-spring</artifactId>
-			<version>7.7.0</version>
-		</dependency>
-		<dependency>
-			<groupId>net.javacrumbs.shedlock</groupId>
-			<artifactId>shedlock-provider-jdbc-template</artifactId>
-			<version>7.7.0</version>
-		</dependency>
-		<dependency>
-			<groupId>org.wiremock.integrations.testcontainers</groupId>
-			<artifactId>wiremock-testcontainers-module</artifactId>
-			<version>1.0-alpha-13</version>
-			<scope>test</scope>
-		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
 			<scope>runtime</scope>
 			<optional>true</optional>
-		</dependency>
-		<dependency>
-			<groupId>io.micrometer</groupId>
-			<artifactId>micrometer-registry-prometheus</artifactId>
-			<scope>runtime</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.postgresql</groupId>
@@ -117,25 +77,8 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-			<groupId>org.springframework.security</groupId>
-			<artifactId>spring-security-test</artifactId>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-testcontainers</artifactId>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.wiremock</groupId>
-			<artifactId>wiremock-standalone</artifactId>
-			<version>${wiremock.version}</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.instancio</groupId>
-			<artifactId>instancio-junit</artifactId>
-			<version>${instancio.version}</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
@@ -158,15 +101,8 @@
 			<artifactId>rabbitmq</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-autoconfigure</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-api</artifactId>
-		</dependency>
 	</dependencies>
+
 	<build>
 		<plugins>
 			<plugin>
