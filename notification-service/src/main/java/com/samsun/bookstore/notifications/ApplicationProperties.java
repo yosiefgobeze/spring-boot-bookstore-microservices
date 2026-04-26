@@ -4,7 +4,6 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 
 @ConfigurationProperties(prefix = "notifications")
 public record ApplicationProperties(
-        //        String catalogServiceUrl,
         String supportEmail,
         String orderEventsExchange,
         String newOrdersQueue,
