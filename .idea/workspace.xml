@@ -15,6 +15,7 @@
       <change beforePath="$PROJECT_DIR$/deployment/docker-compose/apps.yml" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/docker-compose/apps.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deployment/docker-compose/infra.yml" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/docker-compose/infra.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/notification-service/src/main/java/com/samsun/bookstore/notifications/ApplicationProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/samsun/bookstore/notifications/ApplicationProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification-service/src/main/java/com/samsun/bookstore/notifications/domain/NotificationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/samsun/bookstore/notifications/domain/NotificationService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/notification-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
@@ -174,7 +175,7 @@
       <workItem from="1776809691426" duration="25329000" />
       <workItem from="1776888028817" duration="39295000" />
       <workItem from="1777099851580" duration="2468000" />
-      <workItem from="1777130565985" duration="26696000" />
+      <workItem from="1777130565985" duration="27697000" />
     </task>
     <servers />
   </component>
