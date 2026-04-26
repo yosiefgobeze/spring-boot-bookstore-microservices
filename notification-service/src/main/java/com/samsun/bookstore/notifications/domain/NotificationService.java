@@ -85,7 +85,7 @@ public class NotificationService {
                 ===================================================
                 Order Processing Failure Notification
                 ----------------------------------------------------
-                Hi Support_Team,
+                Hi Support-Team,
                 The order processing failed for orderNumber: %s.
                 Reason: %s
 
