@@ -47,7 +47,7 @@ services:
 
   notification-service:
     image: yosiefgobeze/bookstore-notification-service
-    container_name: order-service
+    container_name: notification-service
     environment:
       - SPRING_PROFILES_ACTIVE=docker
       - DB_URL=jdbc:postgresql://notifications-db:5432/postgres
