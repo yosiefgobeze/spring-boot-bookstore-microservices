@@ -59,8 +59,6 @@ services:
       - RABBITMQ_PASSWORD=guest
       - MAIL_HOST=mailhog
       - MAIL_PORT=1025
-      - MANAGEMENT_TRACING_ENABLED=${MANAGEMENT_TRACING_ENABLED}
-      - MANAGEMENT_ZIPKIN_TRACING_ENDPOINT=http://tempo:9411
     ports:
       - "8083:8083"
     restart: unless-stopped
@@ -77,14 +75,12 @@ services:
           memory: 700m
 
   api-gateway:
-    image: sivaprasadreddy/bookstore-api-gateway
+    image: yosiefgobeze/bookstore-api-gateway
     container_name: api-gateway
     environment:
       - SPRING_PROFILES_ACTIVE=docker
       - CATALOG_SERVICE_URL=http://catalog-service:8081
       - ORDER_SERVICE_URL=http://order-service:8082
-      - MANAGEMENT_TRACING_ENABLED=${MANAGEMENT_TRACING_ENABLED}
-      - MANAGEMENT_ZIPKIN_TRACING_ENDPOINT=http://tempo:9411
     ports:
       - "8989:8989"
     restart: unless-stopped
@@ -92,5 +88,3 @@ services:
       resources:
         limits:
           memory: 700m
-    labels:
-      logging: "promtail"
