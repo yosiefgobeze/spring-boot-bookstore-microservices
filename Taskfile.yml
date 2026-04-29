@@ -27,6 +27,7 @@ tasks:
       - "{{.MVNW}} -pl order-service spring-boot:build-image"
       - "{{.MVNW}} -pl notification-service spring-boot:build-image"
       - "{{.MVNW}} -pl api-gateway spring-boot:build-image"
+      - "{{.MVNW}} -pl bookstore-webapp spring-boot:build-image"
 
   # ---------------- INFRA ----------------
   start_infra:

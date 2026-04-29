@@ -2,8 +2,11 @@ package com.samsun.bookstore.webapp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.properties.ConfigurationPropertiesScan;
 
 @SpringBootApplication
+// @EnableConfigurationProperties(ApplicationProperties.class)
+@ConfigurationPropertiesScan
 public class BookstoreWebappApplication {
 
     public static void main(String[] args) {
