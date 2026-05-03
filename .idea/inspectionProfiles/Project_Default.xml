@@ -10,6 +10,17 @@
           <option value="bookstore-webapp" />
           <option value="bookstore-webapp" />
           <option value="bookstore-webapp" />
+          <option value="order-service" />
+          <option value="order-service" />
+          <option value="order-service" />
+          <option value="order-service" />
+          <option value="order-service" />
+          <option value="order-service" />
+          <option value="order-service" />
+          <option value="order-service" />
+          <option value="order-service" />
+          <option value="order-service" />
+          <option value="order-service" />
         </list>
       </option>
       <option name="ignoredPackages">
@@ -19,10 +30,32 @@
           <option value="org.apache.tomcat.embed:tomcat-embed-core:10.1.53" />
           <option value="org.springframework:spring-web:6.2.17" />
           <option value="org.springframework:spring-webmvc:6.2.17" />
+          <option value="org.springframework:spring-web:6.2.17" />
+          <option value="org.springframework.security:spring-security-core:6.5.9" />
+          <option value="org.springframework.security:spring-security-config:6.5.9" />
+          <option value="org.keycloak:keycloak-core:24.0.0" />
+          <option value="org.springframework.boot:spring-boot-autoconfigure:3.5.13" />
+          <option value="org.keycloak:keycloak-common:24.0.0" />
+          <option value="org.springframework.security:spring-security-oauth2-jose:6.5.9" />
+          <option value="org.apache.james:apache-mime4j-core:0.8.9" />
+          <option value="org.springframework.boot:spring-boot:3.5.13" />
+          <option value="commons-io:commons-io:2.11.0" />
+          <option value="org.apache.commons:commons-compress:1.24.0" />
         </list>
       </option>
       <option name="ignoredReasons">
         <list>
+          <option value="Not exploitable" />
+          <option value="Not exploitable" />
+          <option value="Not exploitable" />
+          <option value="Not exploitable" />
+          <option value="Not exploitable" />
+          <option value="Not exploitable" />
+          <option value="Not exploitable" />
+          <option value="Not exploitable" />
+          <option value="Not exploitable" />
+          <option value="Not exploitable" />
+          <option value="Not exploitable" />
           <option value="Not exploitable" />
           <option value="Not exploitable" />
           <option value="Not exploitable" />

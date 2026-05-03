@@ -31,7 +31,7 @@ public class CatalogServiceClientConfig {
     //    }
 
     @Bean
-    RestClient restClient(ApplicationProperties properties) {
+    RestClient restClient(RestClient.Builder builder, ApplicationProperties properties) {
 
         RequestConfig config = RequestConfig.custom()
                 .setConnectTimeout(5000, java.util.concurrent.TimeUnit.MILLISECONDS)
@@ -43,8 +43,7 @@ public class CatalogServiceClientConfig {
 
         HttpComponentsClientHttpRequestFactory factory = new HttpComponentsClientHttpRequestFactory(httpClient);
 
-        return RestClient.builder()
-                .baseUrl(properties.catalogServiceUrl())
+        return builder.baseUrl(properties.catalogServiceUrl())
                 .requestFactory(factory)
                 .build();
     }

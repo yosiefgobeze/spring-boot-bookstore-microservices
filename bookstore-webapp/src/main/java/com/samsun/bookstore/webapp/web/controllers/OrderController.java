@@ -1,8 +1,14 @@
 package com.samsun.bookstore.webapp.web.controllers;
 
-import com.samsun.bookstore.webapp.clients.orders.*;
+import com.samsun.bookstore.webapp.clients.orders.CreateOrderRequest;
+import com.samsun.bookstore.webapp.clients.orders.OrderConfirmationDTO;
+import com.samsun.bookstore.webapp.clients.orders.OrderDTO;
+import com.samsun.bookstore.webapp.clients.orders.OrderServiceClient;
+import com.samsun.bookstore.webapp.clients.orders.OrderSummary;
+import com.samsun.bookstore.webapp.services.SecurityHelper;
 import jakarta.validation.Valid;
 import java.util.List;
+import java.util.Map;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -17,9 +23,11 @@ import org.springframework.web.bind.annotation.ResponseBody;
 class OrderController {
     private static final Logger log = LoggerFactory.getLogger(OrderController.class);
     private final OrderServiceClient orderServiceClient;
+    private final SecurityHelper securityHelper;
 
-    OrderController(OrderServiceClient orderServiceClient) {
+    OrderController(OrderServiceClient orderServiceClient, SecurityHelper securityHelper) {
         this.orderServiceClient = orderServiceClient;
+        this.securityHelper = securityHelper;
     }
 
     @GetMapping("/cart")
@@ -30,7 +38,9 @@ class OrderController {
     @PostMapping("/api/orders")
     @ResponseBody
     OrderConfirmationDTO createOrder(@Valid @RequestBody CreateOrderRequest orderRequest) {
-        return orderServiceClient.createOrder(orderRequest);
+        String accessToken = securityHelper.getAccessToken();
+        Map<String, ?> headers = Map.of("Authorization", "Bearer " + accessToken);
+        return orderServiceClient.createOrder(headers, orderRequest);
     }
 
     @GetMapping("/orders/{orderNumber}")
@@ -42,7 +52,9 @@ class OrderController {
     @GetMapping("/api/orders/{orderNumber}")
     @ResponseBody
     OrderDTO getOrder(@PathVariable String orderNumber) {
-        return orderServiceClient.getOrder(orderNumber);
+        String accessToken = securityHelper.getAccessToken();
+        Map<String, ?> headers = Map.of("Authorization", "Bearer " + accessToken);
+        return orderServiceClient.getOrder(headers, orderNumber);
     }
 
     @GetMapping("/orders")
@@ -53,7 +65,13 @@ class OrderController {
     @GetMapping("/api/orders")
     @ResponseBody
     List<OrderSummary> getOrders() {
-        log.info("Fetching orders");
-        return orderServiceClient.getOrders();
+        String accessToken = securityHelper.getAccessToken();
+        Map<String, ?> headers = Map.of("Authorization", "Bearer " + accessToken);
+        return orderServiceClient.getOrders(headers);
     }
+
+    //    private Map<String, ?> getHeaders() {
+    //        String accessToken = securityHelper.getAccessToken();
+    //        return Map.of("Authorization", "Bearer " + accessToken);
+    //    }
 }
