@@ -47,18 +47,18 @@ public abstract class AbstractIT {
     @Autowired
     protected MockMvc mockMvc;
 
-    static WireMockContainer wiremockeServer = new WireMockContainer("wiremock/wiremock:3.13.1-alpine");
-
-    @BeforeAll
-    static void beforeAll() {
-        wiremockeServer.start();
-        configureFor(wiremockeServer.getHost(), wiremockeServer.getPort());
-    }
-
-    @DynamicPropertySource
-    static void configureProperties(DynamicPropertyRegistry registry) {
-        registry.add("orders.catalog-service-url", wiremockeServer::getBaseUrl);
-    }
+//    static WireMockContainer wiremockeServer = new WireMockContainer("wiremock/wiremock:3.13.1-alpine");
+//
+//    @BeforeAll
+//    static void beforeAll() {
+//        wiremockeServer.start();
+//        configureFor(wiremockeServer.getHost(), wiremockeServer.getPort());
+//    }
+//
+//    @DynamicPropertySource
+//    static void configureProperties(DynamicPropertyRegistry registry) {
+//        registry.add("orders.catalog-service-url", wiremockeServer::getBaseUrl);
+//    }
 
     @BeforeEach
     void setUp() {

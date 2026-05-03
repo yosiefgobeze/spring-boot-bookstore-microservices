@@ -5,37 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc767f9b-9258-4490-b8a1-a6f6cc4fa675" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/db-forest-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/data_sources_history.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/data_sources_history.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Taskfile.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Taskfile.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstore-webapp/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore-webapp/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstore-webapp/src/main/java/com/samsun/bookstore/webapp/clients/orders/OrderServiceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore-webapp/src/main/java/com/samsun/bookstore/webapp/clients/orders/OrderServiceClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstore-webapp/src/main/java/com/samsun/bookstore/webapp/web/controllers/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore-webapp/src/main/java/com/samsun/bookstore/webapp/web/controllers/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstore-webapp/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore-webapp/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstore-webapp/src/main/resources/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore-webapp/src/main/resources/templates/layout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog-service/src/main/java/com/samsun/bookstore/catalog/web/controllers/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-service/src/main/java/com/samsun/bookstore/catalog/web/controllers/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog-service/src/test/java/com/samsun/bookstore/catalog/web/controllers/ProductControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-service/src/test/java/com/samsun/bookstore/catalog/web/controllers/ProductControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deployment/docker-compose/apps.yml" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/docker-compose/apps.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deployment/docker-compose/infra.yml" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/docker-compose/infra.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/samsun/bookstore/orders/clients/catalog/CatalogServiceClientConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/com/samsun/bookstore/orders/clients/catalog/CatalogServiceClientConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/samsun/bookstore/orders/domain/SecurityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/com/samsun/bookstore/orders/domain/SecurityService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order-service/src/test/java/com/samsun/bookstore/orders/AbstractIT.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/test/java/com/samsun/bookstore/orders/AbstractIT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/test/java/com/samsun/bookstore/orders/TestcontainersConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/test/java/com/samsun/bookstore/orders/TestcontainersConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/test/java/com/samsun/bookstore/orders/web/controllers/OrderControllerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/test/java/com/samsun/bookstore/orders/web/controllers/OrderControllerTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/test/resources/test-orders.sql" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/test/resources/test-orders.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -272,7 +243,7 @@
       <workItem from="1777738688186" duration="882000" />
       <workItem from="1777747420842" duration="16979000" />
       <workItem from="1777767224747" duration="71000" />
-      <workItem from="1777767480450" duration="17196000" />
+      <workItem from="1777767480450" duration="18758000" />
     </task>
     <servers />
   </component>
