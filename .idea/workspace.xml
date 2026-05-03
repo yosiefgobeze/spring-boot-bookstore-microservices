@@ -6,6 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="dc767f9b-9258-4490-b8a1-a6f6cc4fa675" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookstore-webapp/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore-webapp/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookstore-webapp/src/test/java/com/samsun/bookstore/webapp/BookstoreWebappApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,69 +60,70 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.BookstoreWebappApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.OrderServiceApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.GetOrdersTests.shouldGetOrdersSuccessfully.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.OrderControllerTests$CreateOrderTests.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.OrderControllerTests$CreateOrderTests.shouldReturnBadRequestWhenMandatoryDataIsMissing.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.OrderControllerTests$GetOrderByOrderNumberTests.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.OrderControllerTests$GetOrderByOrderNumberTests.shouldGetOrderSuccessfully.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.OrderControllerTests$GetOrdersTests.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.OrderControllerTests.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.OrderControllerUnitTests.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ProductControllerTest.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.api-gateway [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.bookstore-webapp [clean,verify].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.bookstore-webapp [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.catalog-service [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.notification-service [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.order-service [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.spring-boot-bookstore-microservices [clean...].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.spring-boot-bookstore-microservices [clean].executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Notification.DisplayName-DoNotAsk-DatabaseConfigFileWatcher.found&quot;: &quot;New/updated database configurations found&quot;,
-    &quot;Notification.DoNotAsk-DatabaseConfigFileWatcher.found&quot;: &quot;true&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;Spring Boot.ApiGatewayApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.BookstoreWebappApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.CatalogServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.NotificationServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.OrderServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;//wsl.localhost/Ubuntu/home/samsun/spring-boot-bookstore-microservices/bookstore-webapp/src/main/resources/static/images&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.4091954&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.BookstoreWebappApplication.executor": "Run",
+    "Application.OrderServiceApplication.executor": "Debug",
+    "JUnit.BookstoreWebappApplicationTests.contextLoads.executor": "Run",
+    "JUnit.GetOrdersTests.shouldGetOrdersSuccessfully.executor": "Run",
+    "JUnit.OrderControllerTests$CreateOrderTests.executor": "Run",
+    "JUnit.OrderControllerTests$CreateOrderTests.shouldReturnBadRequestWhenMandatoryDataIsMissing.executor": "Run",
+    "JUnit.OrderControllerTests$GetOrderByOrderNumberTests.executor": "Run",
+    "JUnit.OrderControllerTests$GetOrderByOrderNumberTests.shouldGetOrderSuccessfully.executor": "Run",
+    "JUnit.OrderControllerTests$GetOrdersTests.executor": "Run",
+    "JUnit.OrderControllerTests.executor": "Run",
+    "JUnit.OrderControllerUnitTests.executor": "Run",
+    "JUnit.ProductControllerTest.executor": "Run",
+    "Maven.api-gateway [clean].executor": "Run",
+    "Maven.bookstore-webapp [clean,verify].executor": "Run",
+    "Maven.bookstore-webapp [clean].executor": "Run",
+    "Maven.catalog-service [clean].executor": "Run",
+    "Maven.notification-service [clean].executor": "Run",
+    "Maven.order-service [clean].executor": "Run",
+    "Maven.spring-boot-bookstore-microservices [clean...].executor": "Run",
+    "Maven.spring-boot-bookstore-microservices [clean].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Notification.DisplayName-DoNotAsk-DatabaseConfigFileWatcher.found": "New/updated database configurations found",
+    "Notification.DoNotAsk-DatabaseConfigFileWatcher.found": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "Spring Boot.ApiGatewayApplication.executor": "Run",
+    "Spring Boot.BookstoreWebappApplication.executor": "Run",
+    "Spring Boot.CatalogServiceApplication.executor": "Run",
+    "Spring Boot.NotificationServiceApplication.executor": "Run",
+    "Spring Boot.OrderServiceApplication.executor": "Run",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "master",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "//wsl.localhost/Ubuntu/home/samsun/spring-boot-bookstore-microservices/bookstore-webapp/src/main/resources/static/images",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.4091954",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="\\wsl.localhost\Ubuntu\home\samsun\spring-boot-bookstore-microservices\bookstore-webapp\src\main\resources\static\images" />
@@ -151,7 +158,23 @@
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.CatalogServiceApplication">
+  <component name="RunManager" selected="JUnit.BookstoreWebappApplicationTests.contextLoads">
+    <configuration name="BookstoreWebappApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bookstore-webapp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.samsun.bookstore.webapp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.samsun.bookstore.webapp" />
+      <option name="MAIN_CLASS_NAME" value="com.samsun.bookstore.webapp.BookstoreWebappApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="ENABLE_JMX_AUTH" value="true" />
       <module name="api-gateway" />
@@ -209,6 +232,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.BookstoreWebappApplicationTests.contextLoads" />
       <item itemvalue="Spring Boot.CatalogServiceApplication" />
       <item itemvalue="Spring Boot.NotificationServiceApplication" />
       <item itemvalue="Spring Boot.OrderServiceApplication" />
@@ -217,6 +241,7 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BookstoreWebappApplicationTests.contextLoads" />
         <item itemvalue="Spring Boot.BookstoreWebappApplication" />
         <item itemvalue="Spring Boot.ApiGatewayApplication" />
       </list>
@@ -242,7 +267,7 @@
       <workItem from="1777738688186" duration="882000" />
       <workItem from="1777747420842" duration="16979000" />
       <workItem from="1777767224747" duration="71000" />
-      <workItem from="1777767480450" duration="20711000" />
+      <workItem from="1777767480450" duration="23959000" />
     </task>
     <servers />
   </component>

@@ -1,7 +1,7 @@
 server:
   port: 8989
   shutdown: graceful
-######## Actuator Configuration  #########
+######## Actuator Configuration
 management:
   endpoints:
     web:
