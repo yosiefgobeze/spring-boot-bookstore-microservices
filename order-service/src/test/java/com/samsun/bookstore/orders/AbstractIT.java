@@ -8,7 +8,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.github.tomakehurst.wiremock.client.WireMock;
 import io.restassured.RestAssured;
 import java.math.BigDecimal;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.keycloak.OAuth2Constants;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,13 +19,10 @@ import org.springframework.context.annotation.Import;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
-import org.springframework.test.context.DynamicPropertyRegistry;
-import org.springframework.test.context.DynamicPropertySource;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestTemplate;
-import org.wiremock.integrations.testcontainers.WireMockContainer;
 
 @Import(TestcontainersConfiguration.class)
 @SpringBootTest(webEnvironment = RANDOM_PORT)
@@ -41,24 +37,24 @@ public abstract class AbstractIT {
     @Autowired
     OAuth2ResourceServerProperties oAuth2ResourceServerProperties;
 
-    @LocalServerPort // will bind a random port to the variable below
+    @LocalServerPort
     int port;
 
     @Autowired
     protected MockMvc mockMvc;
 
-//    static WireMockContainer wiremockeServer = new WireMockContainer("wiremock/wiremock:3.13.1-alpine");
-//
-//    @BeforeAll
-//    static void beforeAll() {
-//        wiremockeServer.start();
-//        configureFor(wiremockeServer.getHost(), wiremockeServer.getPort());
-//    }
-//
-//    @DynamicPropertySource
-//    static void configureProperties(DynamicPropertyRegistry registry) {
-//        registry.add("orders.catalog-service-url", wiremockeServer::getBaseUrl);
-//    }
+    //    static WireMockContainer wiremockeServer = new WireMockContainer("wiremock/wiremock:3.13.1-alpine");
+    //
+    //    @BeforeAll
+    //    static void beforeAll() {
+    //        wiremockeServer.start();
+    //        configureFor(wiremockeServer.getHost(), wiremockeServer.getPort());
+    //    }
+    //
+    //    @DynamicPropertySource
+    //    static void configureProperties(DynamicPropertyRegistry registry) {
+    //        registry.add("orders.catalog-service-url", wiremockeServer::getBaseUrl);
+    //    }
 
     @BeforeEach
     void setUp() {
